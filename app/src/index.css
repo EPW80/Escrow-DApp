@@ -1,0 +1,220 @@
+/* Universal Styles */
+* {
+    box-sizing: border-box;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+/* Body Styles */
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #ff00ff;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    animation: outrageous 5s infinite;
+}
+
+@keyframes outrageous {
+    0% { background-color: #ff00ff; }
+    25% { background-color: #ff1493; }
+    50% { background-color: #8a2be2; }
+    75% { background-color: #ff4500; }
+    100% { background-color: #ff00ff; }
+}
+
+/* Main Section Styles */
+main {
+    padding: 5rem 0 7rem 0;
+    width: 100vw;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 10px dashed #32cd32;
+    border-radius: 2rem;
+    box-shadow: 0 0 20px #8b0000;
+}
+
+/* Headings Styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #ffd700;
+    font-weight: 900;
+    text-shadow: 3px 3px #00ced1;
+}
+
+/* Paragraph Styles */
+p {
+    color: #00ced1;
+    font-size: 1.5rem;
+}
+
+/* Specific Heading Style */
+h1 {
+    margin: 20px;
+    padding: 20px;
+    border-bottom: 5px dotted #00ced1;
+    background-color: #32cd32;
+}
+
+/* Label Styles */
+label {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    color: #ff69b4;
+    margin: 30px;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px #00008b;
+}
+
+/* Input Text Styles */
+input[type="text"] {
+    margin-top: 1rem;
+    padding: 10px;
+    font-size: 22px;
+    background-color: #ffd700;
+    color: #00008b;
+    outline: none;
+    border: 3px solid #00ced1;
+    border-radius: 1rem;
+}
+
+/* Main Title Styles */
+.main-title {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 2.5rem;
+    color: #00ced1;
+    text-shadow: 2px 2px #ff4500;
+    font-size: 3rem;
+    font-style: italic;
+}
+
+/* Contract Container Styles */
+.contract,
+.existing-contracts {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px;
+    padding: 60px;
+    border: 5px solid #ff1493;
+    border-radius: 2rem;
+    background-color: #8a2be2;
+    box-shadow: 0 0 30px #ffd700;
+}
+
+/* Existing Contract List Styles */
+.existing-contract ul {
+    padding: 2rem;
+    margin: 30px;
+    background-color: #32cd32;
+    border: 3px dashed #ff69b4;
+    border-radius: 1rem;
+}
+
+.existing-contract ul > li {
+    color: #ff1493;
+    list-style: none;
+    display: flex;
+    margin: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px dotted #ffd700;
+    overflow-x: scroll;
+}
+
+.existing-contract ul > li > div {
+    margin: 0 15px;
+}
+
+.existing-contract ul > li > :first-child {
+    font-weight: 900;
+    text-shadow: 1px 1px #00008b;
+}
+
+/* Approved Section Styles */
+.approved {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.approved-el {
+    margin: 1.5rem;
+    flex-basis: 100%;
+    color: #32cd32;
+    padding: 1.5rem 0 1rem 0;
+    background-color: #ff1493;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px #00ced1;
+}
+
+/* Button Styles */
+.button {
+    border: 2px dashed #00ced1;
+    background-color: #00ced1;
+    color: #ff69b4;
+    text-align: center;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 30px;
+    padding: 15px 35px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 1rem;
+    transition: all 0.5s ease;
+}
+
+.button:hover {
+    background-color: #ff69b4;
+    color: #00ced1;
+    transform: scale(1.1);
+}
+
+.button:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+    background-color: #00ced1;
+    color: #ff69b4;
+}
+
+/* Invalid Text Styles */
+.invalid-text {
+    color: #ff0000;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Invalid Border Styles */
+.invalid-border {
+    border-color: #ff0000;
+    border-width: 3px;
+}
+
+/* Invisible Element Styles */
+.invisible {
+    display: none;
+}
+
+/* Fixed Container Styles */
+.fixed-container {
+    position: fixed;
+    background-color: rgba(255, 0, 255, 0.8);
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    border: 10px solid #32cd32;
+    border-radius: 2rem;
+    box-shadow: 0 0 20px #00ced1;
+}

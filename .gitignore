@@ -1,0 +1,8 @@
+app/dist
+app/src/artifacts/build-info/*
+*.dbg.json
+cache
+node_modules
+*.bck
+.DS_Store
+.env
