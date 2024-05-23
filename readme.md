@@ -62,3 +62,7 @@ The app has the contract code and test, the frontend React App, and a server tha
   - At the root level it runs the [npm script `server`](./package.json) which runs `cd app && npm run dev`
   - You can `cd server` and run `npm run dev` as well
 - The server's purpose is to provide persistent data to have easier access to the deployed contracts
+
+## Image
+
+![](./demo.png)
